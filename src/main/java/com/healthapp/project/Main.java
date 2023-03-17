@@ -22,5 +22,6 @@ public class Main {
     UserService userService = context.getBean(UserService.class);
 
   System.out.print(userService.isDBConnected());
+  System.out.println(userService.canIAddARow());
   }
 }

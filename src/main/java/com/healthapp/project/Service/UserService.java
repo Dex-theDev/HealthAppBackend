@@ -31,6 +31,18 @@ public class UserService {
       return false;
     }
   }
+  //can probably add a method here that adds a row to make sure we're good
+    public boolean canIAddARow(){
+       try{
+           String statement = "INSERT INTO user_dex (first_name, last_name) VALUES (?,?)";
+           jdbcTemplate.update(statement, "Bo", "Katan");
+           return true;
+       } catch (Exception e){
+           System.out.println(e.getMessage());
+           e.printStackTrace();
+           return false;
+       }
+    }
   // the api probably wont need this but im just throwing it here for now, just to have a method
 
   public Collection<User> getAllUsers() {
