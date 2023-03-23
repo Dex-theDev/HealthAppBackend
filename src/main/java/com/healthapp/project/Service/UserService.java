@@ -19,6 +19,8 @@ public class UserService {
      this.jdbcTemplate = new JdbcTemplate(dataSource);
      this.userDAO = userDAO;
    }
+
+
   public boolean isDBConnected() {
     try {
       int rowCount = jdbcTemplate.queryForObject("SELECT COUNT(*) FROM user_dex", Integer.class);
