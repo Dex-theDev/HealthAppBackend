@@ -112,14 +112,14 @@ public class MedicationService {
                 try {
                     String statement = "INSERT INTO medications (brand_name, strength, dosage_form) VALUES (?,?,?)";
                     jdbcTemplate.update(statement, brandName, strength, dosage_form);
-                   return true;
+
                 } catch (Exception e) {
                     System.out.println(e.getMessage());
-
+                    return false;
                 }
 
             }
         }
-        return false;
+        return true;
     }
 }
