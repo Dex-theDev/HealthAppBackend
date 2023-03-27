@@ -1,10 +1,10 @@
 com/healthapp/project/DAO/UserDAO.class
 com/healthapp/project/Service/UserService.class
-com/healthapp/project/Controller/UserController.class
 com/healthapp/project/Entity/User.class
 com/healthapp/project/Entity/MedicationBuilder$Value.class
+com/healthapp/project/Main.class
+com/healthapp/project/Entity/MedicationBuilder.class
+com/healthapp/project/Controller/UserController.class
 com/healthapp/project/DAO/UserDAO$1.class
 com/healthapp/project/DAO/DataSourceConfig.class
-com/healthapp/project/Main.class
 com/healthapp/project/Entity/Medication.class
-com/healthapp/project/Entity/MedicationBuilder.class
