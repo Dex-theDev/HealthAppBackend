@@ -4,9 +4,11 @@ import io.norberg.automatter.AutoMatter;
 
 @AutoMatter
 public interface Medication {
-  int id();
+  //int id();
 
-  String medication_name();
+  String brand_name();
 
   String strength();
+
+  String dosage_form();
 }
